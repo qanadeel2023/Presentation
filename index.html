@@ -1215,7 +1215,7 @@ document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLi
 // ── Sponsor version toggle (v=14 shows sponsor, all others hide) ──
 (function(){
   var v = new URLSearchParams(window.location.search).get('v');
-  if(v === '14'){
+  if(v === '14' || v === '11'){
     document.querySelectorAll('.sponsor-only').forEach(function(el){ el.style.display = ''; });
     var d = document.querySelector('.sec-title-default');
     var s = document.querySelector('.sec-title-sponsor');
